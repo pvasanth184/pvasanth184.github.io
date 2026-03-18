@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Vasanth Pidaparthy | University of Maryland</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif; line-height: 1.6; color: #333; background-color: #fff; padding: 40px 20px; }
+        .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: 50px; }
+        .sidebar { position: sticky; top: 40px; align-self: start; }
+        .avatar { width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px; object-fit: cover; }
+        h1 { font-size: 1.8em; margin-bottom: 10px; font-weight: 600; }
+        .subtitle { font-size: 1em; color: #666; margin-bottom: 5px; }
+        
+        /* Updated Contact and Social Links Styling */
+        .contact { margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; }
+        .contact-item { margin-bottom: 8px; color: #666; display: flex; align-items: center; gap: 8px; }
+        
+        .social-links { margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; display: flex; flex-direction: column; gap: 12px; }
+        .social-links a { display: flex; align-items: center; gap: 10px; color: #0066cc; text-decoration: none; font-size: 1.05em; transition: color 0.2s; }
+        .social-links a:hover { color: #004499; text-decoration: underline; }
+        .social-links i { font-size: 1.2em; width: 20px; text-align: center; color: #444; }
+        
+        .main-content { min-width: 0; }
+        h2 { font-size: 1.8em; margin-top: 25px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 2px solid #eee; font-weight: 600; }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 15px; text-align: justify; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .publication { margin-bottom: 15px; }
+        .publication-title { font-weight: 500; margin-bottom: 5px; }
+        .publication-details { color: #666; font-size: 0.95em; }
+        .experience-item { margin-bottom: 15px; }
+        .experience-title { font-weight: 500; }
+        .experience-location { color: #666; font-style: italic; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 5px; }
+        
+        @media (max-width: 968px) {
+            .container { grid-template-columns: 1fr; gap: 30px; }
+            .sidebar { position: static; text-align: center; }
+            .avatar { margin-left: auto; margin-right: auto; }
+            .social-links { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 20px; }
+            .contact-item { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="./assets/img/avatar.jpg" alt="Vasanth Pidaparthy" class="avatar">
+            <h1>Vasanth Pidaparthy</h1>
+            <div class="subtitle">Ph.D. Candidate in Mathematics</div>
+            <div class="subtitle">University of Maryland, College Park</div>
+            
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i> p.vasanth.184 (at) gmail.com
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="./assets/files/CV.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Curriculum Vitae
+                </a>
+                <a href="https://scholar.google.com/citations?hl=en&user=2iwJKmoAAAAJ" target="_blank">
+                    <i class="fab fa-google"></i> Google Scholar
+                </a>
+                <a href="https://www.linkedin.com/in/vasanth-pidaparthy/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>About</h2>
+            <p>
+                Welcome to my webpage. I am a fifth-year Ph.D. candidate in Mathematics at the University of Maryland, College Park, under the supervision of <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Prof. Yanir A. Rubinstein</a>. I received my Bachelors and Masters in Mathematics from the <a href="https://ug.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Institute of Science, Bengaluru, India,</a> in 2021.
+            </p>
+            <p>
+                I am broadly interested in geometric analysis and non-linear PDE, with an emphasis on the special Lagrangian and degenerate special Lagrangian equations.
+            </p>
+            
+            <h2>Publications & Preprints</h2>
+            <div class="publication">
+                <div class="publication-title">
+                    <a href="https://arxiv.org/abs/2507.17018" target="_blank" rel="noopener noreferrer">Convexity and the degenerate special Lagrangian equation</a> (with <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Y.A. Rubinstein</a>)
+                </div>
+                <div class="publication-details">
+                    <em>preprint, 2025, arXiv:2507.17018.</em>
+                </div>
+            </div>
+            <div class="publication">
+                <div class="publication-title">
+                    <a href="https://arxiv.org/abs/2503.23532" target="_blank" rel="noopener noreferrer">Moduli of special Lagrangians with boundary, II: Lagrangian Flux and Affine Structures</a>
+                </div>
+                <div class="publication-details">
+                    <em>preprint, 2025, arXiv:2503.23532.</em>
+                </div>
+            </div>
+            <div class="publication">
+                <div class="publication-title">
+                    <a href="https://arxiv.org/abs/2503.23525" target="_blank" rel="noopener noreferrer">Moduli of special Lagrangians with boundary, I: Unobstructed Deformations</a>
+                </div>
+                <div class="publication-details">
+                    <em>preprint, 2025, arxiv:2503.23525, to appear in Indiana Univ. Math. J.</em>
+                </div>
+            </div>
+            <div class="publication">
+                <div class="publication-title"><a href="https://doi.org/10.1016/j.bulsci.2025.103714" target="_blank" rel="noopener noreferrer">The Hausdorff distance and metrics on toric singularity types</a> (with A. Aitokhuehi, B. Braiman, D. Cutler, <a href="https://math.umd.edu/~tdarvas/" target="_blank" rel="noopener noreferrer">T. Darvas</a>, R. Deaton, P. Gupta, J. Horsley, J. Tang)</div>
+                <div class="publication-details">
+                    <em>Bull. Sci. Math. (2025), Paper No. 103714, 20 pp.</em>
+                </div>
+            </div>
+
+            <h2>Books</h2>
+            <div class="publication">
+                <div class="publication-title">Subequations (with <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Y.A. Rubinstein</a>)</div>
+                <div class="publication-details">
+                    <em>Graduate textbook, solicited by European Mathematical Society (EMS).</em>
+                </div>
+            </div>
+
+            <h2>Invited Talks</h2>
+            <div class="publication">
+                <a href="https://math.iisc.ac.in/seminars/2025/2025-09-29-vasanth-pidaparthy.html" target="_blank" rel="noopener noreferrer">Geometry & Topology Seminar</a>, IISc, Bengaluru, India, Sep 29, 2025.
+            </div>
+
+            <h2>Outreach</h2>
+            <p>I have served as a Graduate Teaching Assistant for the following REU programs:</p>
+            <ul>
+                <li><a href="https://www.math.umd.edu/~mariakc/REU2024Darvas.html" target="_blank" rel="noopener noreferrer">Interaction between convex geometry and complex geometry</a>, Summer 2024</li>
+                <li><a href="https://www.math.umd.edu/~mariakc/REU2023deRosa.html" target="_blank" rel="noopener noreferrer">Geometric measure theory in optimal transport, geometric flows, and minimal surfaces</a>, Summer 2023</li>
+            </ul>
+
+            <h2>Internships</h2>
+            <div class="experience-item">
+                <div class="experience-title">Quantum Computing Research Intern at <a href="https://www.error-corp.com/" target="_blank" rel="noopener noreferrer">Error Corp</a> (June 2025 - August 2025).</div>
+                <ul>
+                    <li>Formulated a signal interference problem in quantum error correction as a differential geometry problem and implemented a numerical solver in Python (JAX) to optimize control pulses, achieving a significant reduction in error rates.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
