@@ -47,6 +47,42 @@
             .social-links { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 20px; }
             .contact-item { justify-content: center; }
         }
+        .bibliography .publication-title {
+                margin-bottom: 2px;
+                line-height: 1.45;
+            }
+            
+            .bibliography .publication-title strong {
+                font-weight: 400;
+            }
+            
+            /* The paper link is the first link on the title line. */
+            .bibliography .publication-title > a:first-child {
+                color: #28394a;
+                text-decoration: underline;
+                text-decoration-color: #b8c5d1;
+                text-underline-offset: 0.16em;
+            }
+            
+            .bibliography .publication-title > a:first-child:hover,
+            .bibliography .publication-title > a:first-child:focus-visible {
+                color: #0066cc;
+                text-decoration-color: currentColor;
+            }
+            
+            .bibliography .publication-details {
+                color: #555;
+                font-size: 0.95em;
+            }
+            
+            .bibliography .publication-details em {
+                font-style: normal;
+            }
+            
+            .bibliography .venue {
+                color: #222;
+                font-weight: 600;
+            }
     </style>
 </head>
 <body>
@@ -54,9 +90,6 @@
         <aside class="sidebar">
             <img src="./assets/img/avatar.jpg" alt="Vasanth Pidaparthy" class="avatar">
             <h1>Vasanth Pidaparthy</h1>
-            <div class="subtitle">Ph.D. Candidate in Mathematics</div>
-            <div class="subtitle">University of Maryland, College Park</div>
-            
             <div class="contact">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i> p.vasanth.184 (at) gmail.com
@@ -79,17 +112,20 @@
         <main class="main-content">
             <h2>About</h2>
             <p>
-                Ph.D. candidate in Mathematics at the <a href="https://www-math.umd.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, College Park</a>, under the supervision of <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Prof. Yanir A. Rubinstein</a>. I received my bachelors and masters in Mathematics from the <a href="https://ug.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science, Bengaluru, India,</a> in 2021. I expect to graduate in May 2027, and am currently on the job market.
+                Ph.D. candidate in Mathematics at the <a href="https://www-math.umd.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, College Park</a>, under the supervision of <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Prof. Yanir A. Rubinstein</a>. I expect to graduate in May 2027, and am currently on the job market.
             </p>
             <p>
-                I am broadly interested in geometric analysis, non-linear PDE and flows, and symplectic geometry.
+                I am broadly interested in geometric analysis, and study problems at the interface of potential theory, a priori estimates, and differential and symplectic geometry. Recently I have been exploring how geometric methods can inform research in and applications of AI
             </p>
 
+            <div class="bibliography">
             <h2>Books</h2>
             <div class="publication">
                 <div class="publication-title"><strong>Subequations</strong> (with <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Y.A. Rubinstein</a>)</div>
                 <div class="publication-details">
-                    <em>Graduate textbook, accepted in AMS Graduate Studies in Mathematics (subject to revisions) (301pp).</em>
+                    Graduate textbook, accepted for the AMS
+                    <strong class="venue">Graduate Studies in Mathematics</strong> series
+                    (subject to revisions). 301 pages.
                 </div>
             </div>
             <div class="publication">
@@ -100,6 +136,14 @@
             </div>
 
             <h2>Publications & Preprints</h2>
+            <div class="publication">
+                <div class="publication-title">
+                    <a href="https://arxiv.org/abs/2611.14253" target="_blank" rel="noopener noreferrer"><strong>Regularity via subequations</strong></a> (with <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Y.A. Rubinstein</a>)
+                </div>
+                <div class="publication-details">
+                    <em>preprint, 2026, arXiv:2611.14253.</em>
+                </div>
+            </div>
             <div class="publication">
                 <div class="publication-title">
                     <a href="https://arxiv.org/abs/2507.17018" target="_blank" rel="noopener noreferrer"><strong>Convexity and the degenerate special Lagrangian equation</strong></a> (with <a href="http://www.math.umd.edu/~yanir/" target="_blank" rel="noopener noreferrer">Y.A. Rubinstein</a>)
@@ -121,20 +165,28 @@
                     <a href="https://arxiv.org/abs/2503.23525" target="_blank" rel="noopener noreferrer"><strong>Moduli of special Lagrangians with boundary, I: Unobstructed Deformations</strong></a>
                 </div>
                 <div class="publication-details">
-                    <em>to appear in Indiana Univ. Math. J.,  arXiv:2503.23525</em>
+                    To appear in <strong class="venue">Indiana University Mathematics Journal</strong>.
+                    arXiv:2503.23525.
                 </div>
             </div>
             <div class="publication">
                 <div class="publication-title"><a href="https://doi.org/10.1016/j.bulsci.2025.103714" target="_blank" rel="noopener noreferrer"><strong>The Hausdorff distance and metrics on toric singularity types</strong></a> (with A. Aitokhuehi, B. Braiman, D. Cutler, <a href="https://math.umd.edu/~tdarvas/" target="_blank" rel="noopener noreferrer">T. Darvas</a>, R. Deaton, P. Gupta, J. Horsley, J. Tang)</div>
                 <div class="publication-details">
-                    <em>Bull. Sci. Math. (2025), Paper No. 103714, 20 pp.</em>
+                    <strong class="venue">Bulletin des Sciences Mathématiques</strong>
+                    (2025), Paper No. 103714, 20 pp.
                 </div>
             </div>
-
+            </div>
+            
             <h2>Talks</h2>
             <div class="publication">
                 <div class="publication-title">
-                    (upcoming) <a href="https://sites.google.com/umd.edu/geomfest2027" target="_blank" rel="noopener noreferrer"><strong>40th Geometry Festival</strong></a>, in honor of F. Reese Harvey's and H. Blaine Lawson Jr.'s 85th birthdays, UMD, College Park, Maryland, USA, Apr 2--4, 2027.
+                    (upcoming) <a href="https://sites.google.com/umd.edu/geomfest2027" target="_blank" rel="noopener noreferrer"><strong>40th Geometry Festival</strong></a>, College Park, Maryland, Apr 2--4, 2027.
+                </div>
+            </div>
+            <div class="publication">
+                <div class="publication-title">
+                    (upcoming) <a href="https://sites.google.com/view/jhu-geometric-analysis-seminar" target="_blank" rel="noopener noreferrer"><strong>JHU Geometric Analysis Seminar</strong></a>, Baltimore, Maryland, Dec 10, 2026.
                 </div>
             </div>
             <div class="publication">
@@ -142,6 +194,35 @@
                     <a href="https://math.iisc.ac.in/seminars/2025/2025-09-29-vasanth-pidaparthy.html" target="_blank" rel="noopener noreferrer"><strong>Geometry & Topology Seminar</strong></a>, IISc, Bengaluru, India, Sep 29, 2025.
                 </div>
             </div>
+
+            <h2>Outreach and Mentoring</h2>
+            <ul>
+                <li>
+                    <strong>Summer 2024.</strong> I mentored six undergraduates as a
+                    graduate teaching assistant for the UMD REU on
+                    <a href="https://www.math.umd.edu/~mariakc/REU2024Darvas.html">convex
+                    and complex geometry</a>. The project led to our joint paper
+                    <a href="https://doi.org/10.1016/j.bulsci.2025.103714">The Hausdorff
+                    distance and metrics on toric singularity types</a>, published in
+                    <em>Bulletin des Sciences Mathématiques</em>.
+                </li>
+                <li>
+                    <strong>Summer 2023.</strong> I mentored four undergraduates as a
+                    graduate teaching assistant for the UMD REU on
+                    <a href="https://www.math.umd.edu/~mariakc/REU2023deRosa.html">geometric
+                    measure theory in optimal transport, geometric flows, and minimal
+                    surfaces</a>.
+                </li>
+                <li>
+                    <strong>Spring 2023.</strong> Through UMD’s Directed Reading Program,
+                    I mentored an undergraduate studying the Bolzano–Weierstrass theorem.
+                </li>
+                <li>
+                    <strong>Summer 2021.</strong> At Monsoon Math Camp, an online program
+                    for high school students in India, I taught probability, including
+                    martingales and the gambler’s ruin problem.
+                </li>
+            </ul>
 
             <h2>Internships</h2>
             <div class="publication">
@@ -151,13 +232,6 @@
                  Modelled the problem of minimizing first order interaction/cross-talk errors in a 2-qubit quantum system as the differential geometry problem of identifying optimal control curves in the lie group SU(2). Implemented a numerical solver in Python (JAX) to optimize control pulses, achieving a significant reduction in error rates.
 
             </div>
-
-            <h2>Outreach</h2>
-            <p>I have served as a Graduate Teaching Assistant for the following REU programs:</p>
-            <ul>
-                <li><a href="https://www.math.umd.edu/~mariakc/REU2024Darvas.html" target="_blank" rel="noopener noreferrer">Interaction between convex geometry and complex geometry</a>, Summer 2024</li>
-                <li><a href="https://www.math.umd.edu/~mariakc/REU2023deRosa.html" target="_blank" rel="noopener noreferrer">Geometric measure theory in optimal transport, geometric flows, and minimal surfaces</a>, Summer 2023</li>
-            </ul>
 
         </main>
     </div>
